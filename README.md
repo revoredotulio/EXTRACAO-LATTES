@@ -1,93 +1,93 @@
 
-# Projeto de Extração de Informações do Currículo Lattes
+    # EXTRACAO-LATTES
 
-Este repositório contém diversos blocos de códigos em notebooks Jupyter para extrair informações do currículo Lattes. Abaixo estão listados os notebooks com suas respectivas descrições.
+    Projeto desenvolvido para extração de grandes volumes de currículos lattes
 
-## Estrutura do Projeto
+    ## Estrutura dos Arquivos
 
-IMIP-LATTES/
-├── notebooks/
-│ ├── EXTRAÇÃO DE ARTIGOS.ipynb
-│ ├── EXTRAÇÃO DE CAP DE LIVRO.ipynb
-│ ├── EXTRAÇÃO DE DISCIPLINAS.ipynb
-│ ├── EXTRAÇÃO DE LIVROS.ipynb
-│ ├── EXTRAÇÃO DE ORIENTAÇÕES.ipynb
-│ ├── EXTRAÇÃO DE OUTRAS PUBLICAÇÕES.ipynb
-│ ├── EXTRAÇÃO DE PRODUÇÃO TÉCNICA.ipynb
-│ └── EXTRAÇÃO DE PROJETOS DE PESQUISA.ipynb
-├── docs/
-│ └── additional_documentation.md
-├── LICENSE
-├── README.md
-├── requirements.txt
-└── setup.py
+    Este repositório contém scripts para a extração de diversas informações de currículos Lattes. Abaixo está a descrição de cada arquivo:
 
-## Requisitos
+    - **EXTRAÇÃO DE ARTIGOS.py**: Script para extração de artigos de periódicos.
+    - **EXTRAÇÃO DE CAP DE LIVRO.py**: Script para extração de capítulos de livros.
+    - **EXTRAÇÃO DE DISCIPLINAS.py**: Script para extração de disciplinas ministradas.
+    - **EXTRAÇÃO DE LIVROS.py**: Script para extração de livros publicados.
+    - **EXTRAÇÃO DE ORIENTAÇÕES.py**: Script para extração de orientações de alunos.
+    - **EXTRAÇÃO DE OUTRAS PUBLICAÇÕES.py**: Script para extração de outras publicações.
+    - **EXTRAÇÃO DE PRODUÇÃO TÉCNICA.py**: Script para extração de produções técnicas.
+    - **EXTRAÇÃO DE PROJETOS DE PESQUISA.py**: Script para extração de projetos de pesquisa.
 
-- Python 3.x
-- Jupyter Notebook
+    ## Requisitos do Projeto
 
-## Instalação
+    Certifique-se de ter as seguintes bibliotecas Python instaladas:
+    - requests
+    - pandas
+    - BeautifulSoup
+    - lxml
 
-1. Clone o repositório:
-    ```sh
-    git clone https://github.com/revoredotulio/IMIP-LATTES.git
-    cd IMIP-LATTES
-    ```
-
-2. Instale as dependências:
-    ```sh
+    Você pode instalar as dependências necessárias usando:
+    ```bash
     pip install -r requirements.txt
     ```
 
-## Uso
+    ## Instruções de Instalação
 
-1. Abra o Jupyter Notebook:
-    ```sh
-    jupyter notebook
+    1. Clone o repositório para sua máquina local:
+        ```bash
+        git clone https://github.com/revoredotulio/EXTRACAO-LATTES.git
+        ```
+
+    2. Navegue até o diretório do repositório:
+        ```bash
+        cd EXTRACAO-LATTES
+        ```
+
+    3. Instale as dependências necessárias:
+        ```bash
+        pip install -r requirements.txt
+        ```
+
+    ## Como Utilizar
+
+    Cada script é independente e pode ser executado separadamente. Para executar um script, utilize o Python seguido do nome do arquivo. Por exemplo, para executar o script de extração de artigos, utilize:
+    ```bash
+    python EXTRAÇÃO DE ARTIGOS.py
     ```
 
-2. No navegador, abra o notebook desejado no diretório `notebooks/`, por exemplo, `notebooks/EXTRAÇÃO DE ARTIGOS.ipynb`.
+    ## Exemplos de Uso
 
-3. Execute as células do notebook para realizar a extração dos dados do Currículo Lattes.
+    ### Extração de Artigos
 
-## Exemplos
-
-### Extração de Artigos
-
-Abra `notebooks/EXTRAÇÃO DE ARTIGOS.ipynb` e execute as células para extrair informações sobre artigos publicados. O notebook irá carregar os dados do Currículo Lattes e processar as informações para exibir uma tabela com os artigos.
-
-### Extração de Capítulos de Livro
-
-Abra `notebooks/EXTRAÇÃO DE CAP DE LIVRO.ipynb` e execute as células para extrair informações sobre capítulos de livros. O notebook irá carregar os dados do Currículo Lattes e processar as informações para exibir uma tabela com os capítulos de livros.
-
-## Contribuições
-
-Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades. Para isso, siga os passos abaixo:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para suas alterações:
-    ```sh
-    git checkout -b minha-branch
+    Para extrair artigos de currículos Lattes, execute o seguinte comando:
+    ```bash
+    python EXTRAÇÃO DE ARTIGOS.py
     ```
-3. Faça commit das suas alterações:
-    ```sh
-    git commit -m "Minha contribuição"
+
+    ### Extração de Capítulos de Livro
+
+    Para extrair capítulos de livros de currículos Lattes, execute o seguinte comando:
+    ```bash
+    python EXTRAÇÃO DE CAP DE LIVRO.py
     ```
-4. Faça push para a branch:
-    ```sh
-    git push origin minha-branch
-    ```
-5. Abra um pull request.
 
-## Licença
+    ## Problemas Comuns e Soluções
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+    ### Problema: Erro de Conexão
+    **Solução**: Verifique sua conexão com a internet e certifique-se de que o servidor do Lattes está acessível.
 
-## Contato
+    ### Problema: Erro de Autenticação
+    **Solução**: Verifique suas credenciais e certifique-se de que você tem permissão para acessar os dados necessários.
 
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou entrar em contato comigo.
+    ## Contribuindo
 
----
+    Para contribuir com este projeto, por favor siga os passos abaixo:
 
-**Observação**: Este projeto é uma demonstração de como extrair informações do Currículo Lattes utilizando Python e Jupyter Notebook. Certifique-se de ajustar os notebooks de acordo com suas necessidades específicas.
+    1. Faça um fork do repositório.
+    2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+    3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
+    4. Faça o push para a branch (`git push origin feature/nova-feature`).
+    5. Crie um novo Pull Request.
+
+    ## Licença
+
+    Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
+    
