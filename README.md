@@ -1,5 +1,3 @@
-Claro! Vou fornecer a documentação em partes separadas, para que você possa entender cada seção do `README.md` detalhadamente.
-
 ### 1. Estrutura Básica do README.md
 
 Vamos começar com a estrutura básica e a introdução do projeto.
