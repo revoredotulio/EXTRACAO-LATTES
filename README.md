@@ -1,93 +1,141 @@
+Claro! Vou fornecer a documentação em partes separadas, para que você possa entender cada seção do `README.md` detalhadamente.
 
-    # EXTRACAO-LATTES
+### 1. Estrutura Básica do README.md
 
-    Projeto desenvolvido para extração de grandes volumes de currículos lattes
+Vamos começar com a estrutura básica e a introdução do projeto.
 
-    ## Estrutura dos Arquivos
+```markdown
+# EXTRACAO-LATTES
 
-    Este repositório contém scripts para a extração de diversas informações de currículos Lattes. Abaixo está a descrição de cada arquivo:
+Projeto desenvolvido para extração de grandes volumes de currículos lattes.
 
-    - **EXTRAÇÃO DE ARTIGOS.py**: Script para extração de artigos de periódicos.
-    - **EXTRAÇÃO DE CAP DE LIVRO.py**: Script para extração de capítulos de livros.
-    - **EXTRAÇÃO DE DISCIPLINAS.py**: Script para extração de disciplinas ministradas.
-    - **EXTRAÇÃO DE LIVROS.py**: Script para extração de livros publicados.
-    - **EXTRAÇÃO DE ORIENTAÇÕES.py**: Script para extração de orientações de alunos.
-    - **EXTRAÇÃO DE OUTRAS PUBLICAÇÕES.py**: Script para extração de outras publicações.
-    - **EXTRAÇÃO DE PRODUÇÃO TÉCNICA.py**: Script para extração de produções técnicas.
-    - **EXTRAÇÃO DE PROJETOS DE PESQUISA.py**: Script para extração de projetos de pesquisa.
+## Estrutura dos Arquivos
 
-    ## Requisitos do Projeto
+Este repositório contém scripts para a extração de diversas informações de currículos Lattes. Abaixo está a descrição de cada arquivo:
 
-    Certifique-se de ter as seguintes bibliotecas Python instaladas:
-    - requests
-    - pandas
-    - BeautifulSoup
-    - lxml
+- **EXTRAÇÃO DE ARTIGOS.py**: Script para extração de artigos de periódicos.
+- **EXTRAÇÃO DE CAP DE LIVRO.py**: Script para extração de capítulos de livros.
+- **EXTRAÇÃO DE DISCIPLINAS.py**: Script para extração de disciplinas ministradas.
+- **EXTRAÇÃO DE LIVROS.py**: Script para extração de livros publicados.
+- **EXTRAÇÃO DE ORIENTAÇÕES.py**: Script para extração de orientações de alunos.
+- **EXTRAÇÃO DE OUTRAS PUBLICAÇÕES.py**: Script para extração de outras publicações.
+- **EXTRAÇÃO DE PRODUÇÃO TÉCNICA.py**: Script para extração de produções técnicas.
+- **EXTRAÇÃO DE PROJETOS DE PESQUISA.py**: Script para extração de projetos de pesquisa.
+```
 
-    Você pode instalar as dependências necessárias usando:
+### 2. Requisitos do Projeto
+
+Aqui estão as bibliotecas necessárias para o projeto.
+
+```markdown
+## Requisitos do Projeto
+
+Certifique-se de ter as seguintes bibliotecas Python instaladas:
+- requests
+- pandas
+- BeautifulSoup
+- lxml
+
+Você pode instalar as dependências necessárias usando:
+```bash
+pip install -r requirements.txt
+```
+```
+
+### 3. Instruções de Instalação
+
+Esta seção explica como clonar o repositório e instalar as dependências.
+
+```markdown
+## Instruções de Instalação
+
+1. Clone o repositório para sua máquina local:
+    ```bash
+    git clone https://github.com/revoredotulio/EXTRACAO-LATTES.git
+    ```
+
+2. Navegue até o diretório do repositório:
+    ```bash
+    cd EXTRACAO-LATTES
+    ```
+
+3. Instale as dependências necessárias:
     ```bash
     pip install -r requirements.txt
     ```
+```
 
-    ## Instruções de Instalação
+### 4. Como Utilizar
 
-    1. Clone o repositório para sua máquina local:
-        ```bash
-        git clone https://github.com/revoredotulio/EXTRACAO-LATTES.git
-        ```
+Instruções para executar cada script individualmente.
 
-    2. Navegue até o diretório do repositório:
-        ```bash
-        cd EXTRACAO-LATTES
-        ```
+```markdown
+## Como Utilizar
 
-    3. Instale as dependências necessárias:
-        ```bash
-        pip install -r requirements.txt
-        ```
+Cada script é independente e pode ser executado separadamente. Para executar um script, utilize o Python seguido do nome do arquivo. Por exemplo, para executar o script de extração de artigos, utilize:
+```bash
+python EXTRAÇÃO DE ARTIGOS.py
+```
+```
 
-    ## Como Utilizar
+### 5. Exemplos de Uso
 
-    Cada script é independente e pode ser executado separadamente. Para executar um script, utilize o Python seguido do nome do arquivo. Por exemplo, para executar o script de extração de artigos, utilize:
-    ```bash
-    python EXTRAÇÃO DE ARTIGOS.py
-    ```
+Exemplos específicos de como executar cada script.
 
-    ## Exemplos de Uso
+```markdown
+## Exemplos de Uso
 
-    ### Extração de Artigos
+### Extração de Artigos
 
-    Para extrair artigos de currículos Lattes, execute o seguinte comando:
-    ```bash
-    python EXTRAÇÃO DE ARTIGOS.py
-    ```
+Para extrair artigos de currículos Lattes, execute o seguinte comando:
+```bash
+python EXTRAÇÃO DE ARTIGOS.py
+```
 
-    ### Extração de Capítulos de Livro
+### Extração de Capítulos de Livro
 
-    Para extrair capítulos de livros de currículos Lattes, execute o seguinte comando:
-    ```bash
-    python EXTRAÇÃO DE CAP DE LIVRO.py
-    ```
+Para extrair capítulos de livros de currículos Lattes, execute o seguinte comando:
+```bash
+python EXTRAÇÃO DE CAP DE LIVRO.py
+```
+```
 
-    ## Problemas Comuns e Soluções
+### 6. Problemas Comuns e Soluções
 
-    ### Problema: Erro de Conexão
-    **Solução**: Verifique sua conexão com a internet e certifique-se de que o servidor do Lattes está acessível.
+Seção para ajudar a resolver problemas comuns que podem ocorrer.
 
-    ### Problema: Erro de Autenticação
-    **Solução**: Verifique suas credenciais e certifique-se de que você tem permissão para acessar os dados necessários.
+```markdown
+## Problemas Comuns e Soluções
 
-    ## Contribuindo
+### Problema: Erro de Conexão
+**Solução**: Verifique sua conexão com a internet e certifique-se de que o servidor do Lattes está acessível.
 
-    Para contribuir com este projeto, por favor siga os passos abaixo:
+### Problema: Erro de Autenticação
+**Solução**: Verifique suas credenciais e certifique-se de que você tem permissão para acessar os dados necessários.
+```
 
-    1. Faça um fork do repositório.
-    2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
-    3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
-    4. Faça o push para a branch (`git push origin feature/nova-feature`).
-    5. Crie um novo Pull Request.
+### 7. Contribuindo
 
-    ## Licença
+Guia para contribuir com o projeto.
 
-    Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
-    
+```markdown
+## Contribuindo
+
+Para contribuir com este projeto, por favor siga os passos abaixo:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/nova-feature`).
+5. Crie um novo Pull Request.
+```
+
+### 8. Licença
+
+Informações sobre a licença do projeto.
+
+```markdown
+## Licença
+
+Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.
+```
